@@ -12,6 +12,7 @@ def main(config):
     print("\n----- PROCESSING TRUSTED DATA -----")
     df = data_load(config.data.modeling_data)
     processed_df = apply_transformation(df)
+    processed_df.reset_index(drop=True, inplace=True)
     print(processed_df.head())
 
     print("\n----- MODELING -----")

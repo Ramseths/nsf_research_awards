@@ -1,7 +1,17 @@
 experiment_name: topic_nsf
-start: 5
-limit: 11
+start: 7
+limit: 13
 step: 1
 random_state: 42
 chunksize: 100
 version: 1.0.0
+topic_ideal_name: {0: 'Materials Science and Quantum Energy',
+                    1: 'Public Health and Social Behavior',
+                    2: 'Computer Systems and Networks',
+                    3: 'Science and University Development Programs',
+                    4: 'Mathematical Theory and Methods',
+                    5: 'Technological Development and Industrial Innovation',
+                    6: 'Science and Technology Education',
+                    7: 'Molecular and Evolutionary Biology',
+                    8: 'Climate Change and Environmental Ecosystems',
+                    9: 'Geosciences and Earth Observation'}

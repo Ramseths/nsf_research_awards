@@ -217,14 +217,16 @@ def get_results(model, processed_df, corpus, show_results = True):
             print(topic)
 
     dominant_topics = []
-    for i, row_list in enumerate(model[corpus]):
+    for row_list in model[corpus]:
         row = row_list[0] if model.per_word_topics else row_list            
         row = sorted(row, key=lambda x: (x[1]), reverse=True)
+        # Get dominant topic, contribution percentage and keywords.
         topic_num, prop_topic = row[0]
-        dominant_topics.append((i, topic_num, prop_topic))
+        # Append in dominant topics
+        dominant_topics.append((topic_num, prop_topic))
 
-    # Create DataFrame
-    df_topics = pd.DataFrame(dominant_topics, columns=['Document_Id', 'Dominant_Topic', 'Percentage_Contribution'])
+    # Create a DataFrame with topics
+    df_topics = pd.DataFrame(dominant_topics, columns=['dominant_topic', 'percentage_contribution'])
 
     # Combine
     final_df = pd.concat([processed_df, df_topics], axis=1)
@@ -257,6 +259,8 @@ def model_run(processed_df, config, show_results):
     
     
     final_df = get_results(model, processed_df, corpus, show_results = show_results)
+
+    final_df['topic_name'] = final_df['dominant_topic'].map(config.topic_ideal_name)
 
     return final_df
 
