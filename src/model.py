@@ -1,9 +1,10 @@
-from gensim import corpora
-from gensim.models import LdaModel
-from gensim.models.coherencemodel import CoherenceModel
 import mlflow
 import numpy as np
 import pandas as pd
+from gensim import corpora
+from gensim.models import LdaModel
+from gensim.models.coherencemodel import CoherenceModel
+
 
 def set_up_model(processed_df):
     """

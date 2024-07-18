@@ -1,8 +1,11 @@
 from datetime import datetime
+
 import hydra
-from processing import processing, data_load, apply_transformation
 import pandas as pd
+
 from model import model_run
+from processing import apply_transformation, data_load, processing
+
 
 @hydra.main(config_path='./../config/', config_name='main', version_base='1.2')
 def main(config):

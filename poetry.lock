@@ -1555,6 +1555,20 @@ test = ["pickleshare", "pytest (<7.1)", "pytest-asyncio (<0.22)", "testpath"]
 test-extra = ["curio", "matplotlib (!=3.2.0)", "nbformat", "numpy (>=1.22)", "pandas", "pickleshare", "pytest (<7.1)", "pytest-asyncio (<0.22)", "testpath", "trio"]
 
 [[package]]
+name = "isort"
+version = "5.13.2"
+description = "A Python utility / library to sort Python imports."
+optional = false
+python-versions = ">=3.8.0"
+files = [
+    {file = "isort-5.13.2-py3-none-any.whl", hash = "sha256:8ca5e72a8d85860d5a3fa69b8745237f2939afe12dbf656afbcb47fe72d947a6"},
+    {file = "isort-5.13.2.tar.gz", hash = "sha256:48fdfcb9face5d58a4f6dde2e72a1fb8dcaf8ab26f95ab49fab84c2ddefb0109"},
+]
+
+[package.extras]
+colors = ["colorama (>=0.4.6)"]
+
+[[package]]
 name = "itsdangerous"
 version = "2.2.0"
 description = "Safely pass data to untrusted environments and back."
@@ -2999,13 +3013,13 @@ testing = ["pytest", "pytest-benchmark"]
 
 [[package]]
 name = "pre-commit"
-version = "2.21.0"
+version = "2.18.0"
 description = "A framework for managing and maintaining multi-language pre-commit hooks."
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "pre_commit-2.21.0-py2.py3-none-any.whl", hash = "sha256:e2f91727039fc39a92f58a588a25b87f936de6567eed4f0e673e0507edc75bad"},
-    {file = "pre_commit-2.21.0.tar.gz", hash = "sha256:31ef31af7e474a8d8995027fefdfcf509b5c913ff31f2015b4ec4beb26a6f658"},
+    {file = "pre_commit-2.18.0-py2.py3-none-any.whl", hash = "sha256:3edbd0021fff824f7f2ded704e4e0a3ecca4b9c5eaa2cc7e9978e6d948be364e"},
+    {file = "pre_commit-2.18.0.tar.gz", hash = "sha256:f19f7b0d71d2eb260342b21565eef3dae56a802aba12fa9be06b9d67baa5b21c"},
 ]
 
 [package.dependencies]
@@ -3013,7 +3027,8 @@ cfgv = ">=2.0.0"
 identify = ">=1.0.0"
 nodeenv = ">=0.11.1"
 pyyaml = ">=5.1"
-virtualenv = ">=20.10.0"
+toml = "*"
+virtualenv = ">=20.0.8"
 
 [[package]]
 name = "preshed"
@@ -5303,4 +5318,4 @@ test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", 
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "e9828d1efc72a80817a49c51a9510e0452644d357de33bab4cb93be72543f8e1"
+content-hash = "4a3c3cb3f6f0aa5b260f2c7ab7434fb7f5410463e92e229e0563a597d04ae067"

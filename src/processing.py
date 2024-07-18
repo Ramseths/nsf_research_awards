@@ -1,10 +1,11 @@
-from datetime import datetime
 import os
-import pandas as pd
-from nltk.corpus import stopwords
-import spacy
 import re
 import xml.etree.ElementTree as ET
+from datetime import datetime
+
+import pandas as pd
+import spacy
+from nltk.corpus import stopwords
 
 
 def get_xml_path(directory_path):

@@ -21,6 +21,8 @@ mlflow = "^2.14.3"
 transformers = "^4.42.4"
 sentence-transformers = "^3.0.1"
 datasets = "^2.20.0"
+pre-commit = "2.18.0"
+isort = "^5.13.2"
 
 [tool.poetry.dev-dependencies]
 pdoc3 = "^0.10.0"
