@@ -1,0 +1,7 @@
+experiment_name: topic_nsf
+start: 5
+limit: 11
+step: 1
+random_state: 42
+chunksize: 100
+version: 1.0.0

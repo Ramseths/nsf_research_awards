@@ -1,9 +1,8 @@
 defaults:
-  - process: process1
-  - model: model1
+  - process: preprocessing
+  - model: model
   - _self_
 
 data:
-  raw: data/raw/sample.csv
-  processed: data/processed/processed.csv
-  final: data/final/final.csv
+  modeling_data: ../data/trusted/nsf_research_awards_abstracts.csv
+  output_path: ../data/refined/
