@@ -7,7 +7,7 @@ from model import model_run
 @hydra.main(config_path='./../config/', config_name='main', version_base='1.2')
 def main(config):
     print("----- PROCESSING RAW DATA -----")
-    # processing(config.process)
+    processing(config.process)
 
     print("\n----- PROCESSING TRUSTED DATA -----")
     df = data_load(config.data.modeling_data)
