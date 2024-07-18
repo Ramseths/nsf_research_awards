@@ -261,6 +261,7 @@ def model_run(processed_df, config, show_results):
     final_df = get_results(model, processed_df, corpus, show_results = show_results)
 
     final_df['topic_name'] = final_df['dominant_topic'].map(config.topic_ideal_name)
+    final_df.drop(columns=['text', 'clean text'], inplace=True)
 
     return final_df
 
