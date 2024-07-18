@@ -8,6 +8,7 @@ authors = ["Ramseths"]
 [tool.poetry.dependencies]
 python = "^3.9"
 hydra-core = "^1.1.1"
+pandas = "^2.2.2"
 
 [tool.poetry.dev-dependencies]
 pdoc3 = "^0.10.0"

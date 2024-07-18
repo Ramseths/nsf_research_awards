@@ -1,0 +1,9 @@
+# data
+data:
+  directory_path: ./../data/raw/2020/
+  vars_to_extract: ['Award/AwardEffectiveDate', 'Award/Institution/CountryName', 'Award/Investigator/PI_FULL_NAME', 
+                    'Award/AwardTotalIntnAmount', 'Award/AbstractNarration']
+  output_path: ./../data/trusted/
+
+
+  
