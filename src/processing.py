@@ -77,3 +77,4 @@ def processing(config):
         df.to_csv(config.data.output_path + 'nsf_research_awards_abstracts.csv', index = False)
     except Exception as e:
         print('Error Processing: {e}')
+
