@@ -13,11 +13,13 @@ def get_xml_path(directory_path):
 
     Parameters
     ----------
-    directory_path: Primary path to find files.
+    directory_path: str
+        Primary path to find files.
 
     Returns
     -------
-    xml_files: List with all paths.
+    xml_files: list
+        List with all paths.
     """
     # Primary Path
     directory_path = './../data/raw/2020/'
@@ -34,6 +36,7 @@ def extract_data(xml_file, vars_to_process):
     Parameters
     ----------
     xml_file: XML File.
+        File with information to be processed.
 
     Returns
     -------
@@ -50,11 +53,13 @@ def processing_dataframe(list_xml_files, vars_to_process):
 
     Parameters
     ----------
-    list_xml_files: List with all paths of XML files.
+    list_xml_files: list
+        all paths of XML files.
 
     Returns
     -------
-    df: DataFrame with all info processed.
+    df: DataFrame
+        All information integrated.
     """
     # Get all info for each XML file
     data_list = [extract_data(xml_file, vars_to_process) for xml_file in list_xml_files]
